@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros JS</title>
+    <style>
+        body{
+            background-image: linear-gradient(to top, #49a09d, #5f2c82);
+            background-attachment: fixed;
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#area{
+            background-color: #49a09d;
+            color:white;
+            width: 100px;
+            border-radius: 50px;
+            padding: 10%;
+            line-height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de "DOM"</h1>
+    <p>Aplicando DOM</p> 
+    <div id="area">
+        Clique em mim
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            a.innerText = 'clicou!'
+            a.style.background = 'blue'
+        }
+        function entrar(){
+            a.innerText = 'Entrou!'
+        }
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.background = '#49a09d'
+        }
+        
+
+    </script>   
+</body>
+</html>
