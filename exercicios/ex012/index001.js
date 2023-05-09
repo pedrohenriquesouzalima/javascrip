@@ -1,5 +1,5 @@
-//var agora= //new Date() //horario do sistema que está rodando o JV
-var hora=  //agora.getHours()
+var agora= new Date()//horario do sistema que está rodando o JS
+var hora= agora.getHours()
 console.log(`Agora são extamente ${hora}:00 horas.`)
 if(hora >= 6 && hora<=12){
     console.log('Bom dia!')
