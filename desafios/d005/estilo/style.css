@@ -21,6 +21,18 @@ section{
 div#res{
     text-align: center;
 }
+div#sel{
+   text-align: center;
+}
+select{
+    border-radius: 5px;
+    width: 300px;
+    font-size: 20px;
+    background-color: rgb(70, 142, 236);
+    color: white;
+    
+}
+
 footer{
     color: white;
     text-align: center;
